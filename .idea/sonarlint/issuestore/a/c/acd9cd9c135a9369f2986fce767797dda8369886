@@ -1,7 +1,7 @@
 
-~	java:S125."<This block of commented-out lines of code should be removed.(‘ºÑ¬8“ìí1J$55c9fb9b-22cf-4369-9749-e6cb213d2f3a
-ƒ	java:S125C"<This block of commented-out lines of code should be removed.(Œ½ôèúÿÿÿÿ8ÆÁ¡ìí1J$f8ba22c3-4fb2-4274-b359-04303cf5ad42
-Ÿ
-java:S1128"WRemove this unused import 'org.springframework.web.reactive.function.client.WebClient'.(¬à•ıÿÿÿÿ8 “ìí1J$89fa65a9-67b2-444a-96e1-db837c2dfbe1
+~	java:S125."<This block of commented-out lines of code should be removed.(‘ºÑ¬8™áÏïí1J$d3824308-f4a4-484b-9b19-ca4e720e204f
+ƒ	java:S125D"<This block of commented-out lines of code should be removed.(Œ½ôèúÿÿÿÿ8šáÏïí1J$04ba9eac-a00b-4440-b778-c2dfb8e320b4
+—
+java:S1128"ORemove this unused import 'com.hacisimsek.orderservice.config.WebClientConfig'.(°»Ü¤ÿÿÿÿÿ8ÑĞïí1J$2c08daed-1910-48f4-bac6-87aa6b7b5c37
 u
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÑÁ¡ìí1J$242de33c-2387-4d98-8e13-0c4b640d8a46
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÑĞïí1J$6b44a011-415c-4e77-82f6-74f80fa1422f

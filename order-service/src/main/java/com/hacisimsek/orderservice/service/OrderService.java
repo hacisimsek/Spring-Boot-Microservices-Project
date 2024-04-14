@@ -25,7 +25,7 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
 
-    private final WebClientConfig webClient;
+    private final WebClient.Builder webClientBuilder;
 
     public void placeOrder(OrderRequest orderRequest){
 
@@ -58,8 +58,9 @@ public class OrderService {
         boolean allProductsInStock = false;
 
         try {
-            InventoryResponse[] inventoryResponses = webClient.webClient().get()
-                    .uri("http://localhost:8082/api/inventory", uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
+            InventoryResponse[] inventoryResponses = webClientBuilder.build()
+                    .get()
+                    .uri("http://inventory-service/api/inventory", uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                     .retrieve()
                     .bodyToMono(InventoryResponse[].class)
                     .block();

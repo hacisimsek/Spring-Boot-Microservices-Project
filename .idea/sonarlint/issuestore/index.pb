@@ -39,5 +39,5 @@ Rorder-service/src/main/java/com/hacisimsek/orderservice/dto/OrderLineItemsDto.j
 Tinventory-service/src/main/java/com/hacisimsek/inventoryservice/model/Inventory.java,9/b/9b1251827e4098d8c3eff16eb12ece1e854b5432
 H
 discovery-server/pom.xml,2/c/2c58c7878e43d126fc56cae853d5b06de57d0b3e
-g
-7discovery-server/src/main/java/com/hacisimsek/Main.java,3/a/3a29ccb90ab655dfbc58a4366e644b95c2184745
+ç
+]discovery-server/src/main/java/com/hacisimsek/discoveryserver/DiscoveryServerApplication.java,0/7/0707a77555aedf67598af579e49999f4dc3cff74

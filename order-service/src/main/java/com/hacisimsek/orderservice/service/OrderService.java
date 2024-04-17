@@ -27,7 +27,7 @@ public class OrderService {
 
     private final WebClient.Builder webClientBuilder;
 
-    public void placeOrder(OrderRequest orderRequest){
+    public boolean placeOrder(OrderRequest orderRequest){
 
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
@@ -82,8 +82,10 @@ public class OrderService {
 
         if(allProductsInStock){
             orderRepository.save(order);
+            return true;
         }else{
-            throw new IllegalArgumentException("Prodcut is not is stock");
+            return false;
+            //throw new IllegalArgumentException("Prodcut is not is stock");
         }
     }
 

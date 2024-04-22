@@ -1,4 +1,4 @@
-package com.hacisimsek.config;
+package com.hacisimsek.apigatwaye.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

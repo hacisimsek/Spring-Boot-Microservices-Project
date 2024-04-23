@@ -23,3 +23,11 @@ Worder-service/src/main/java/com/hacisimsek/orderservice/controller/OrderControl
 Qorder-service/src/main/java/com/hacisimsek/orderservice/service/OrderService.java,a/c/acd9cd9c135a9369f2986fce767797dda8369886
 ç
 ]inventory-service/src/main/java/com/hacisimsek/inventoryservice/service/InventoryService.java,c/3/c39f8529c74bc629a3728a65c0fc3170a5729497
+G
+product-service/pom.xml,f/c/fcf146007330bb14605a232d25428bbf6aa50b7b
+I
+inventory-service/pom.xml,e/3/e347da292c40d252c508703eddff460d1f378f1c
+Ñ
+Torder-service/src/main/java/com/hacisimsek/orderservice/event/OrderPlancedEvent.java,b/0/b0044e26f6af45f202747b4e09ea2122cb05b671
+É
+Sorder-service/src/main/java/com/hacisimsek/orderservice/event/OrderPlacedEvent.java,e/a/eafeb45189d2ba8990dcc88e6e1fd958ed6864ed

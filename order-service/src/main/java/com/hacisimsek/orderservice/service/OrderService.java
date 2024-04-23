@@ -1,5 +1,7 @@
 package com.hacisimsek.orderservice.service;
 
+import brave.Span;
+import brave.Tracer;
 import com.hacisimsek.orderservice.config.WebClientConfig;
 import com.hacisimsek.orderservice.dto.InventoryResponse;
 import com.hacisimsek.orderservice.dto.OrderLineItemsDto;
@@ -26,6 +28,8 @@ public class OrderService {
     private final OrderRepository orderRepository;
 
     private final WebClient.Builder webClientBuilder;
+
+    private final Tracer tracer;
 
     public String placeOrder(OrderRequest orderRequest){
 
@@ -54,16 +58,23 @@ public class OrderService {
 //                break;
 //            }
 //        }
+        log.info("Checking inventory for products: {}", skuCodes);
 
+        Span invetorySpanLookup = tracer.nextSpan().name("inventory-lookup");
         boolean allProductsInStock = false;
 
-        try {
+        try(Tracer.SpanInScope ws = tracer.withSpanInScope(invetorySpanLookup)){
+            log.info("Inventory lookup span started");
+
             InventoryResponse[] inventoryResponses = webClientBuilder.build()
                     .get()
                     .uri("http://inventory-service/api/inventory", uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                     .retrieve()
                     .bodyToMono(InventoryResponse[].class)
                     .block();
+
+
+            log.info("inventory: {}", Arrays.stream(inventoryResponses).toList().toString());
 
             //allProductsInStock = Arrays.stream(inventoryResponses).allMatch(InventoryResponse::isInStock);
 
@@ -75,17 +86,15 @@ public class OrderService {
                     allProductsInStock = true;
                 }
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-
-        if(allProductsInStock){
-            orderRepository.save(order);
-            return "Order placed successfully";
-        }else{
-            return "Order failed";
-            //throw new IllegalArgumentException("Prodcut is not is stock");
+            if(allProductsInStock){
+                orderRepository.save(order);
+                return "Order placed successfully";
+            }else{
+                throw new IllegalArgumentException("Product is not is stock");
+            }
+        } finally {
+            invetorySpanLookup.tag("error", "false");
         }
     }
 

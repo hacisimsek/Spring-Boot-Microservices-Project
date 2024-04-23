@@ -31,3 +31,7 @@ I
 Torder-service/src/main/java/com/hacisimsek/orderservice/event/OrderPlancedEvent.java,b/0/b0044e26f6af45f202747b4e09ea2122cb05b671
 É
 Sorder-service/src/main/java/com/hacisimsek/orderservice/event/OrderPlacedEvent.java,e/a/eafeb45189d2ba8990dcc88e6e1fd958ed6864ed
+ê
+`inventory-service/src/main/java/com/hacisimsek/inventoryservice/InventoryServiceApplication.java,a/0/a0f85b1348b4beca0eee4abc9d7ab13ed7029f18
+ì
+cinventory-service/src/main/java/com/hacisimsek/inventoryservice/controller/InventoryController.java,3/5/3536f022ba58b52cb16320075695de043ce15dff

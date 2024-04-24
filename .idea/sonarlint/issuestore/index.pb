@@ -35,3 +35,5 @@ Sorder-service/src/main/java/com/hacisimsek/orderservice/event/OrderPlacedEvent.
 `inventory-service/src/main/java/com/hacisimsek/inventoryservice/InventoryServiceApplication.java,a/0/a0f85b1348b4beca0eee4abc9d7ab13ed7029f18
 “
 cinventory-service/src/main/java/com/hacisimsek/inventoryservice/controller/InventoryController.java,3/5/3536f022ba58b52cb16320075695de043ce15dff
+B
+docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a

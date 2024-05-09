@@ -39,8 +39,6 @@ Wproduct-service/src/main/java/com/hacisimsek/productservice/service/ProductServ
 Sorder-service/src/main/java/com/hacisimsek/orderservice/event/OrderPlacedEvent.java,e/a/eafeb45189d2ba8990dcc88e6e1fd958ed6864ed
 L
 notification-service/pom.xml,0/1/01f9e880c9ba9f01d23d7605950269a1f1661129
-k
-;notification-service/src/main/java/com/hacisimsek/Main.java,2/9/29041d3ce43739a0028e39fb846453b988b58c6b
 ô
 inotification-service/src/main/java/com/hacisimsek/notificationservice/NotificationServiceApplication.java,8/b/8bc5ced6a4e25517bd1c1963d5300c89e5c7d801
 ã
@@ -100,3 +98,9 @@ G.idea/sonarlint/issuestore/7/4/746818b3dad165127083b46392e68fba8415f9f4,3/2/32
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+ç
+]product-service/src/main/java/com/hacisimsek/productservice/controller/ProductController.java,6/e/6e58b79e7ebedfebaad62825b782ebc7490785ff
+F
+api-gateway/Dockerfile,9/5/9548e2ce3bdfe112d8c757987e1beebc1ecab5ed
+N
+api-gateway/Dockerfile.layered,9/8/985aae4f95e5f25b49363a8e39e43dc2925f69c1
